@@ -142,6 +142,11 @@ p {
   display: flex;
   flex-direction: column;
   border-radius: 1em;
+  transition-duration: .2s;
+}
+
+.article1 .flexItem:hover {
+  padding: 1em;
 }
 
 .article1 img {
@@ -232,6 +237,10 @@ p {
   color: #525FFB;
 }
 
+.article4 span {
+  z-index: 10;
+}
+
 .article4 .imageBox {
   height: 50em;
   margin: auto;
@@ -244,9 +253,12 @@ p {
 .article4 .imageBox img {
   border-radius: 50%;
   position: absolute;
+  z-index: 0;
 }
 
 .article4 h2 {
+  position: relative;
+  display: block;
   font-size: 5rem;
   font-weight: bold;
   padding: 0;
